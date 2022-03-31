@@ -1,0 +1,134 @@
+{
+  "resourceRule": {
+    "computeType": {
+      "avg": {
+        "label": "平均值"
+      },
+      "min": {
+        "label": "最小值"
+      },
+      "max": {
+        "label": "最大值"
+      }
+    },
+    "source": {
+      "node": {
+        "label": "节点",
+        "types": {
+          "cpuUsage": {
+            "value": "100 - %s by (instance) (irate(node_cpu_seconds_total{mode=\"idle\"}[%ds])) * 100",
+            "label": "CPU占用率"
+          },
+          "memoryUsage": {
+            "value": "100 * (1 - ((%s_over_time(node_memory_MemFree_bytes[%ds]) + %s_over_time(node_memory_Cached_bytes[%ds]) + %s_over_time(node_memory_Buffers_bytes[%ds])) / %s_over_time(node_memory_MemTotal_bytes[%ds])))",
+            "label": "内存使用率"
+          },
+          "gpuUsage": {
+            "value": "%s_over_time(nvidiasmi_utilization_gpu[%ds])",
+            "label": "GPU占用率"
+          },
+          "gpuMemUsage": {
+            "value": "%s_over_time(nvidiasmi_utilization_memory[%ds])",
+            "label": "GPU显存使用率"
+          },
+          "npuUsage": {
+            "value": "%s_over_time(npu_chip_info_utilization[%ds])",
+            "label": "NPU占用率"
+          },
+          "npuMemUsage": {
+            "value": "100 * %s_over_time(npu_chip_info_used_memory[%ds]) / %s_over_time(npu_chip_info_total_memory[%ds])",
+            "label": "NPU显存使用率"
+          },
+          "freeDiskRatio": {
+            "value": "%s by (instance) ((node_filesystem_free_bytes{fstype!~\"rootfs|selinuxfs|autofs|rpc_pipefs|tmpfs|udev|none|devpts|sysfs|debugfs|fuse.*\"}) / (node_filesystem_size_bytes{fstype!~\"rootfs|selinuxfs|autofs|rpc_pipefs|tmpfs|udev|none|devpts|sysfs|debugfs|fuse.*\"}) * 100)",
+            "label": "剩余可用磁盘比例"
+          }
+        }
+      }
+    }
+  },
+  "serviceRule": {
+    "source": {
+      "inferenceResult": {
+        "label": "推理结果",
+        "types": {
+          "okNgRatio": {
+            "value": "cpuUsage",
+            "label": "OK/(OK+NG)占比"
+          }
+        }
+      }
+    },
+    "dataRange": {
+      "all": {
+        "value": "(sum(sum_over_time(ipc_inferences_total{flag=\"OK\"}[%ds]))/sum(sum_over_time(ipc_inferences_total[%ds])))*100",
+        "label": "全部"
+      },
+      "taskName": {
+        "value": "(sum(sum_over_time(ipc_inferences_total{flag=\"OK\",taskName=\"%s\"}[%ds]))/sum(sum_over_time(ipc_inferences_total{taskName=\"%s\"}[%ds])))*100",
+        "label": "工序名称"
+      },
+      "projectName": {
+        "value": "(sum(sum_over_time(ipc_inferences_total{flag=\"OK\",projectName=\"%s\"}[%ds]))/sum(sum_over_time(ipc_inferences_total{projectName=\"%s\"}[%ds])))*100",
+        "label": "工位名称"
+      },
+      "tableName": {
+        "value": "(sum(sum_over_time(ipc_inferences_total{flag=\"OK\",tableName=\"%s\"}[%ds]))/sum(sum_over_time(ipc_inferences_total{tableName=\"%s\"}[%ds])))*100",
+        "label": "线体名称"
+      },
+      "productCode": {
+        "value": "(sum(sum_over_time(ipc_inferences_total{flag=\"OK\",productCode=\"%s\"}[%ds]))/sum(sum_over_time(ipc_inferences_total{productCode=\"%s\"}[%ds])))*100",
+        "label": "产品编码"
+      },
+      "machineId": {
+        "value": "(sum(sum_over_time(ipc_inferences_total{flag=\"OK\",machineId=\"%s\"}[%ds]))/sum(sum_over_time(ipc_inferences_total{machineId=\"%s\"}[%ds])))*100",
+        "label": "工控机ID"
+      }
+    }
+  },
+  "level": {
+    "info": {
+      "value": "1",
+      "label": "提示"
+    },
+    "minor": {
+      "value": "2",
+      "label": "次要"
+    },
+    "important": {
+      "value": "3",
+      "label": "重要"
+    },
+    "urgency": {
+      "value": "4",
+      "label": "紧急"
+    }
+  },
+  "conditionOp": {
+    "eq": {
+      "value": "==",
+      "label": "=="
+    },
+    "gte": {
+      "value": ">=",
+      "label": ">="
+    },
+    "gt": {
+      "value": ">",
+      "label": ">"
+    },
+    "lte": {
+      "value": "<=",
+      "label": "<="
+    },
+    "lt": {
+      "value": "<",
+      "label": "<"
+    }
+  },
+  "receiverChannel": {
+    "mail": {
+      "label": "邮箱"
+    }
+  }
+}

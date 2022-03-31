@@ -1,0 +1,18 @@
+{
+  "status": [
+    {
+      "label": "Ready",
+      "value": "Ready"
+    },
+    {
+      "label": "Not Ready",
+      "value": "Not Ready"
+    }
+  ],
+  "source": [
+    {
+      "label": "预置",
+      "value": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+package metadata
+
+//go:generate go-bindata -pkg $GOPACKAGE -o metadata.bindata.go -ignore .*.go ./...

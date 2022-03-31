@@ -1,0 +1,389 @@
+{
+  "endpoints": [
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-rules:list",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-rules",
+      "module": "aom",
+      "desc": "获取资源告警规则列表"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-rules:create",
+      "httpMethod": "post",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-rules",
+      "module": "aom",
+      "desc": "创建资源告警规则"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-rules:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-rules/{id}",
+      "module": "aom",
+      "desc": "获取资源告警规则详情"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-rules:update",
+      "httpMethod": "put",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-rules/{id}",
+      "module": "aom",
+      "desc": "更新资源告警规则"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-rules:change_status",
+      "httpMethod": "patch",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-rules/{id}",
+      "module": "aom",
+      "desc": "更新资源告警规则状态"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-rules:delete",
+      "httpMethod": "delete",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-rules/{id}",
+      "module": "aom",
+      "desc": "删除资源告警规则"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-history:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-history/{id}",
+      "module": "aom",
+      "desc": "获取资源告警历史列表"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-history:delete",
+      "httpMethod": "delete",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-history",
+      "module": "aom",
+      "desc": "删除资源告警历史"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-resource-history:update",
+      "httpMethod": "put",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/resource-history/{id}",
+      "module": "aom",
+      "desc": "更新资源告警历史"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-setting-metadata:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/setting/metadata",
+      "module": "aom",
+      "desc": "获取告警配置元数据"
+    },
+    {
+      "resource": "*",
+      "action": "aom:resources-conf-metadata:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/resources-conf/metadata",
+      "module": "aom",
+      "desc": "获取资源配置元数据"
+    },
+    {
+      "resource": "*",
+      "action": "aom:nodes:list",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/nodes",
+      "module": "aom",
+      "desc": "获取物理节点列表"
+    },
+    {
+      "resource": "*",
+      "action": "aom:nodes-pod-info:list",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/nodes/pod-info",
+      "module": "aom",
+      "desc": "获取物理节点pod信息"
+    },
+    {
+      "resource": "*",
+      "action": "aom:org-resources:list",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/org-resources",
+      "module": "aom",
+      "desc": "获取组织资源列表"
+    },
+    {
+      "resource": "*",
+      "action": "aom:org-resources:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/org-resources/{id}",
+      "module": "aom",
+      "desc": "获取组织资源详情"
+    },
+    {
+      "resource": "*",
+      "action": "aom:org-resources:delete",
+      "httpMethod": "delete",
+      "httpEndpoint": "/apsc-bff/api/v1/org-resources/{id}",
+      "module": "aom",
+      "desc": "删除组织资源"
+    },
+    {
+      "resource": "*",
+      "action": "aom:org-resources:update",
+      "httpMethod": "patch",
+      "httpEndpoint": "/apsc-bff/api/v1/org-resources/{id}",
+      "module": "aom",
+      "desc": "更新组织资源"
+    },
+    {
+      "resource": "*",
+      "action": "aom:user-group-resources:list",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/user-group-resources",
+      "module": "aom",
+      "desc": "获取用户组资源列表"
+    },
+    {
+      "resource": "*",
+      "action": "aom:user-group-resources:create",
+      "httpMethod": "post",
+      "httpEndpoint": "/apsc-bff/api/v1/user-group-resources",
+      "module": "aom",
+      "desc": "创建用户组资源"
+    },
+    {
+      "resource": "*",
+      "action": "aom:user-group-resources:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/user-group-resources/{id}",
+      "module": "aom",
+      "desc": "获取用户组资源详情"
+    },
+    {
+      "resource": "*",
+      "action": "aom:user-group-resources:delete",
+      "httpMethod": "delete",
+      "httpEndpoint": "/apsc-bff/api/v1/user-group-resources/{id}",
+      "module": "aom",
+      "desc": "删除用户组资源"
+    },
+    {
+      "resource": "*",
+      "action": "aom:user-group-resources:update",
+      "httpMethod": "patch",
+      "httpEndpoint": "/apsc-bff/api/v1/user-group-resources/{id}",
+      "module": "aom",
+      "desc": "更新用户组资源"
+    },
+    {
+      "resource": "*",
+      "action": "aom:user-group-resources:preview",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/user-group-resources/{id}/preview",
+      "module": "aom",
+      "desc": "获取用户组资源预览"
+    },
+    {
+      "resource": "*",
+      "action": "aom:resource-quotas:list",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/resource-quotas",
+      "module": "aom",
+      "desc": "获取资源规格列表"
+    },
+    {
+      "resource": "*",
+      "action": "aom:resource-quotas:create",
+      "httpMethod": "post",
+      "httpEndpoint": "/apsc-bff/api/v1/resource-quotas",
+      "module": "aom",
+      "desc": "创建资源规格"
+    },
+    {
+      "resource": "*",
+      "action": "aom:resource-quotas:delete",
+      "httpMethod": "delete",
+      "httpEndpoint": "/apsc-bff/api/v1/resource-quotas/{id}",
+      "module": "aom",
+      "desc": "删除资源规格"
+    },
+    {
+      "resource": "*",
+      "action": "aom:nodes-overview:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/nodes/overview",
+      "module": "aom",
+      "desc": "获取物理节点总览"
+    },
+    {
+      "resource": "*",
+      "action": "aom:prometheus-query-range:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/prometheus/query-range",
+      "module": "aom",
+      "desc": "获取告警总览"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-rule-mail-test:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/rule-mail-test",
+      "module": "aom",
+      "desc": "获取告警邮件设置"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-setting-mail-test:create",
+      "httpMethod": "post",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/setting/mail-test",
+      "module": "aom",
+      "desc": "告警邮件测试"
+    },
+    {
+      "resource": "*",
+      "action": "aom:system-version:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/system-version",
+      "module": "aom",
+      "desc": "获取系统版本"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-setting-sender:get",
+      "httpMethod": "get",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/setting/sender",
+      "module": "aom",
+      "desc": "获取系统设置告警邮箱"
+    },
+    {
+      "resource": "*",
+      "action": "aom:alert-setting-sender:create",
+      "httpMethod": "post",
+      "httpEndpoint": "/apsc-bff/api/v1/alert/setting/sender",
+      "module": "aom",
+      "desc": "创建系统设置告警邮箱"
+    }
+  ],
+  "policies": {
+    "module": "aom",
+    "systemAdmin": [
+      {
+        "actions": [
+          "aom:alert-resource-rules:list",
+          "aom:alert-resource-rules:create",
+          "aom:alert-resource-rules:get",
+          "aom:alert-resource-rules:update",
+          "aom:alert-resource-rules:change_status",
+          "aom:alert-resource-rules:delete",
+          "aom:alert-resource-history:get",
+          "aom:alert-resource-history:delete",
+          "aom:alert-resource-history:update",
+          "aom:alert-setting-metadata:get",
+          "aom:resources-conf-metadata:get",
+          "aom:nodes:list",
+          "aom:nodes-pod-info:list",
+          "aom:org-resources:list",
+          "aom:org-resources:get",
+          "aom:org-resources:delete",
+          "aom:org-resources:update",
+          "aom:user-group-resources:list",
+          "aom:user-group-resources:create",
+          "aom:user-group-resources:get",
+          "aom:user-group-resources:delete",
+          "aom:user-group-resources:update",
+          "aom:user-group-resources:preview",
+          "aom:resource-quotas:list",
+          "aom:resource-quotas:create",
+          "aom:resource-quotas:delete",
+          "aom:nodes-overview:get",
+          "aom:prometheus-query-range:get",
+          "aom:alert-rule-mail-test:get",
+          "aom:alert-setting-mail-test:create",
+          "aom:system-version:get",
+          "aom:alert-setting-sender:get",
+          "aom:alert-setting-sender:create"
+        ],
+        "effect": "allow"
+      }
+    ],
+    "orgAdmin": [
+      {
+        "actions": [
+          "aom:alert-resource-rules:list",
+          "aom:alert-resource-rules:create",
+          "aom:alert-resource-rules:get",
+          "aom:alert-resource-rules:update",
+          "aom:alert-resource-rules:change_status",
+          "aom:alert-resource-rules:delete",
+          "aom:alert-resource-history:get",
+          "aom:alert-resource-history:delete",
+          "aom:alert-resource-history:update",
+          "aom:alert-setting-metadata:get",
+          "aom:resources-conf-metadata:get",
+          "aom:nodes-pod-info:list",
+          "aom:org-resources:list",
+          "aom:org-resources:get",
+          "aom:org-resources:delete",
+          "aom:org-resources:update",
+          "aom:user-group-resources:list",
+          "aom:user-group-resources:create",
+          "aom:user-group-resources:get",
+          "aom:user-group-resources:delete",
+          "aom:user-group-resources:update",
+          "aom:user-group-resources:preview",
+          "aom:resource-quotas:list",
+          "aom:resource-quotas:create",
+          "aom:resource-quotas:delete",
+          "aom:nodes-overview:get",
+          "aom:prometheus-query-range:get",
+          "aom:alert-rule-mail-test:get",
+          "aom:alert-setting-mail-test:create",
+          "aom:system-version:get",
+          "aom:alert-setting-sender:get",
+          "aom:alert-setting-sender:create"
+        ],
+        "effect": "allow"
+      }
+    ],
+    "developer": [
+      {
+        "actions": [
+          "aom:alert-resource-rules:list",
+          "aom:alert-resource-rules:create",
+          "aom:alert-resource-rules:get",
+          "aom:alert-resource-rules:update",
+          "aom:alert-resource-rules:change_status",
+          "aom:alert-resource-rules:delete",
+          "aom:alert-resource-history:get",
+          "aom:alert-resource-history:delete",
+          "aom:alert-resource-history:update",
+          "aom:alert-setting-metadata:get",
+          "aom:resources-conf-metadata:get",
+          "aom:nodes-pod-info:list",
+          "aom:org-resources:list",
+          "aom:org-resources:get",
+          "aom:org-resources:delete",
+          "aom:org-resources:update",
+          "aom:user-group-resources:list",
+          "aom:user-group-resources:create",
+          "aom:user-group-resources:get",
+          "aom:user-group-resources:delete",
+          "aom:user-group-resources:update",
+          "aom:user-group-resources:preview",
+          "aom:resource-quotas:list",
+          "aom:resource-quotas:create",
+          "aom:resource-quotas:delete",
+          "aom:nodes-overview:get",
+          "aom:prometheus-query-range:get",
+          "aom:alert-rule-mail-test:get",
+          "aom:alert-setting-mail-test:create",
+          "aom:system-version:get",
+          "aom:alert-setting-sender:get",
+          "aom:alert-setting-sender:create"
+        ],
+        "effect": "allow"
+      }
+    ]
+  }
+}
