@@ -27,9 +27,5 @@ func RegisterRoutes(e *gin.Engine) {
 
 	v1.Use(jwtAuth.Middleware())
 
-	v1.GET("/system-version", GetSysVersion)
-	v1.GET("/system/certs", DownloadCerts)
-	v1.POST("/modelarts-setting", SetModelArts)
-	v1.GET("/modelarts-setting", ModelArtsList)
 
 }

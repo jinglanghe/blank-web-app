@@ -2,16 +2,25 @@ package controllers
 
 import (
 	"encoding/json"
-	"fmt"
+	"io/ioutil"
+
 	"github.com/gin-gonic/gin"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service"
-	"io/ioutil"
-	"net/http"
 )
 
-func GetSysVersion(c *gin.Context) {
+func registerMetric(rg *gin.RouterGroup) {
+	ctrl := &metricController{}
+
+	g := rg.Group("/metrics")
+	g.GET("/system-version", ctrl.GetSysVersion)
+}
+
+type metricController struct {
+	BaseController
+}
+
+func (m *metricController) GetSysVersion(c *gin.Context) {
 	sysVersion := model.SysVersion{}
 
 	// 从数据库
@@ -36,17 +45,4 @@ func GetSysVersion(c *gin.Context) {
 	sysVersion.InstallTime = 1623910517706
 	sysVersion.Description = "enjoy yourself"
 	respWithData(c, sysVersion)
-}
-
-func DownloadCerts(c *gin.Context) {
-	data, err := service.DownloadCerts()
-	if err != nil {
-		fail(c, err)
-		return
-	}
-	c.Writer.WriteHeader(http.StatusOK)
-	c.Header("Content-Disposition", "attachment; filename=cert.zip")
-	c.Header("Content-Type", "application/octet-stream")
-	c.Header("Content-Length", fmt.Sprintf("%d", len(data)))
-	c.Writer.Write(data)
 }

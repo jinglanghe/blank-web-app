@@ -67,17 +67,7 @@ func Init() {
 
 	database.AutoMigrate(
 		&model.Setting{},
-		&model.VC{},
-		&model.VCDev{},
-		&model.OrgResource{},
-		&model.Node{},
-		&model.NodeDevice{},
-		&model.ModelArts{},
-		&model.ResourceAlert{},
-		&model.ServiceAlert{},
 		&model.SysVersion{},
-		&model.UserGroupResource{},
-		&model.ResourceQuota{},
 		&model.AlertMetric{},
 	)
 	database = database.Debug()
