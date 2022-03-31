@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-FROM golang:1.16.4-alpine3.13 as builder
+FROM golang:1.17.1-alpine3.13 as builder
 WORKDIR /go/src/gitlab.apulis.com.cn/hjl/blank-web-app-2
 
 ENV GOPROXY=https://goproxy.cn

@@ -1,1 +1,3 @@
-AOM(Application Operations Management) 是云上应用的一站式立体化运维管理平台，实时监控用户的应用及相关云资源，采集并关联资源的各项指标、日志及事件等数据共同分析应用健康状态，提供灵活的告警及丰富的数据可视化功能，帮助用户及时发现故障，全面掌握应用、资源及业务的实时运行状况。
+This is a golang gin-gorm template.
+
+这是一个golang gin-gorm的模版
