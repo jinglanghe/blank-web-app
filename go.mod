@@ -1,4 +1,4 @@
-module gitlab.apulis.com.cn/hjl/blank-web-app-2
+module gitlab.apulis.com.cn/hjl/blank-web-app
 
 go 1.17
 

@@ -2,9 +2,10 @@ package kafka
 
 import (
 	"context"
+
 	"github.com/Shopify/sarama"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 )
 
 var (

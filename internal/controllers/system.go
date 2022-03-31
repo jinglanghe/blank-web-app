@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 
 	"github.com/gin-gonic/gin"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/dao"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/model"
 )
 
 func registerMetric(rg *gin.RouterGroup) {

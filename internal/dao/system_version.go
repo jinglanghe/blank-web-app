@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 )
 
 func SysVersionGet() (version model.SysVersion, err error) {

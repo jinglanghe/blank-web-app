@@ -4,7 +4,7 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/go-redsync/redsync/v4"
 	"github.com/go-redsync/redsync/v4/redis/goredis/v8"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/configs"
 )
 
 var RedLock *redsync.Redsync

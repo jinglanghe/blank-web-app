@@ -2,13 +2,14 @@ package configs
 
 import (
 	"encoding/json"
+
 	"github.com/spf13/viper"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/metadata"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/metadata"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 )
 
 var (
-	Config   AppConfig
+	Config AppConfig
 )
 
 type LogConfig struct {
@@ -29,12 +30,11 @@ type AppConfig struct {
 	JWTConfig        JWTConfig `mapstructure:"jwt"`
 	NodeInfoInterval int64     `mapstructure:"node_info_interval"`
 
-	Mysql      DbStruct    `mapstructure:"mysql"`
-	Postgres   DbStruct    `mapstructure:"postgres"`
-	Sqlite     DbStruct    `mapstructure:"sqlite"`
-	Rabbitmq   Rabbitmq    `mapstructure:"rabbitmq"`
-	Redis      RedisConfig `mapstructure:"redis"`
-
+	Mysql    DbStruct    `mapstructure:"mysql"`
+	Postgres DbStruct    `mapstructure:"postgres"`
+	Sqlite   DbStruct    `mapstructure:"sqlite"`
+	Rabbitmq Rabbitmq    `mapstructure:"rabbitmq"`
+	Redis    RedisConfig `mapstructure:"redis"`
 }
 
 type Rabbitmq struct {

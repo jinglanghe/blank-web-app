@@ -1,8 +1,8 @@
 package service
 
 import (
-	_ "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
+	_ "gitlab.apulis.com.cn/hjl/blank-web-app/internal/dao"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 )
 
 //var (

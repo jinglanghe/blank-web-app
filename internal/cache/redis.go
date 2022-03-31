@@ -2,10 +2,11 @@ package cache
 
 import (
 	"context"
-	"github.com/go-redis/redis/v8"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"time"
+
+	"github.com/go-redis/redis/v8"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 )
 
 // Redis cache implement

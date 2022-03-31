@@ -2,10 +2,11 @@ package kafka
 
 import (
 	"context"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker/codec/json"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"sync"
+
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker/codec/json"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 
 	"github.com/Shopify/sarama"
 	"github.com/google/uuid"

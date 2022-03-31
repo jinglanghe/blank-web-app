@@ -2,7 +2,8 @@ package kafka
 
 import (
 	"context"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker"
+
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker"
 )
 
 // setSubscribeOption returns a function to setup a context with given value

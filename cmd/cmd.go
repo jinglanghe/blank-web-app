@@ -7,8 +7,8 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "blankWebApp2",
-	Short: "blankWebApp2 management",
+	Use:   "blankWebApp",
+	Short: "blankWebApp management",
 	Run: func(cmd *cobra.Command, args []string) {
 	},
 }

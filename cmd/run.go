@@ -1,23 +1,24 @@
 package cmd
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/spf13/cobra"
-	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/cache"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/controllers"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/gin-gonic/gin"
+	"github.com/spf13/cobra"
+	config "gitlab.apulis.com.cn/hjl/blank-web-app/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/cache"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/controllers"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/dao"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/service"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 )
 
 // alertCmd represents the alert command
 var alertCmd = &cobra.Command{
 	Use:   "run",
-	Short: "Run blankWebApp2 service",
+	Short: "Run blankWebApp service",
 	Run: func(cmd *cobra.Command, args []string) {
 		config.Init()
 		cache.Init()

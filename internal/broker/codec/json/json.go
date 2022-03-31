@@ -2,8 +2,9 @@ package json
 
 import (
 	"encoding/json"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker/codec"
 	"io"
+
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker/codec"
 
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"

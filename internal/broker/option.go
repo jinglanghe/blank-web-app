@@ -3,7 +3,8 @@ package broker
 import (
 	"context"
 	"crypto/tls"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker/codec"
+
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker/codec"
 )
 
 type Options struct {

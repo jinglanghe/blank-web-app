@@ -2,11 +2,12 @@ package service
 
 import (
 	"fmt"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker"
-	_ "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker/kafka"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker/rabbitmq"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
+
+	"gitlab.apulis.com.cn/hjl/blank-web-app/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker"
+	_ "gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker/kafka"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker/rabbitmq"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/logging"
 )
 
 var (

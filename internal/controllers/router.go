@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/jwt"
+	config "gitlab.apulis.com.cn/hjl/blank-web-app/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/jwt"
 )
 
 var (
@@ -22,10 +22,8 @@ func RegisterRoutes(e *gin.Engine) {
 	)
 	v1 := e.Group("/api/v1")
 
-
 	registerMetric(v1)
 
 	v1.Use(jwtAuth.Middleware())
-
 
 }

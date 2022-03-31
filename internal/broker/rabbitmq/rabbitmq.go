@@ -3,9 +3,10 @@ package rabbitmq
 import (
 	"context"
 	"errors"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker"
 	"sync"
 	"time"
+
+	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/broker"
 
 	"github.com/streadway/amqp"
 )
