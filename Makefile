@@ -1,5 +1,5 @@
 PKG=gitlab.apulis.com.cn/hjl/blank-web-app-2
-IMAGE?=apulistech/aom-backend
+IMAGE?=apulistech/blankWebApp2-backend
 GIT_COMMIT?=$(shell git rev-parse --short HEAD)
 GIT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 BUILD_DATE?=$(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
@@ -13,7 +13,7 @@ GOPATH=$(shell go env GOPATH)
 .PHONY: build
 build: generate
 	mkdir -p bin
-	GOOS=linux go build -ldflags ${LDFLAGS} -buildmode=pie -o bin/aom main.go
+	GOOS=linux go build -ldflags ${LDFLAGS} -buildmode=pie -o bin/blankWebApp2 main.go
 
  # Regenerates OPA data from rego files
 HAVE_GO_BINDATA := $(shell command -v go-bindata 2> /dev/null)

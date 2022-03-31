@@ -36,7 +36,7 @@ func (p *prometheusController) queryRange(c *gin.Context) {
 	director := func(req *http.Request) {
 		_ = req.ParseForm()
 		_type := req.Form.Get("type")
-		query := "aom_alert_total{alert_type=\"" + _type + "\"}"
+		query := "blankWebApp2_alert_total{alert_type=\"" + _type + "\"}"
 		req.Form.Add("query", query)
 		req.URL.RawQuery = req.Form.Encode()
 

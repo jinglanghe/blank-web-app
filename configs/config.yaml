@@ -11,7 +11,7 @@ postgres:
   port: 5432
   username: "postgres"
   password: "123456"
-  db_name: "aom"
+  db_name: "blankWebApp2"
   sslmode: "require"
   max_open_conns: 10
   max_idle_conns: 2

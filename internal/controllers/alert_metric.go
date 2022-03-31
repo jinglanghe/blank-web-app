@@ -25,7 +25,7 @@ type metricController struct {
 func (m *metricController) metrics(c *gin.Context) {
 	cnt := prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Name: "aom_alert_total",
+			Name: "blankWebApp2_alert_total",
 			Help: "Number of alerts.",
 		},
 		[]string{"alert_type"},

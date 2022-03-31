@@ -28,7 +28,7 @@ RUN go mod download
 RUN make build
 
 FROM alpine:3.11
-COPY --from=builder /go/src/gitlab.apulis.com.cn/hjl/blank-web-app-2/bin/aom /root/aom
+COPY --from=builder /go/src/gitlab.apulis.com.cn/hjl/blank-web-app-2/bin/blankWebApp2 /root/blankWebApp2
 COPY --from=builder /go/src/gitlab.apulis.com.cn/hjl/blank-web-app-2/configs/config.yaml /root
 WORKDIR /root
-ENTRYPOINT ["./aom", "run"]
+ENTRYPOINT ["./blankWebApp2", "run"]

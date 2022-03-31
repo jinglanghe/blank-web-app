@@ -1,13 +1,13 @@
 @Library('apulis-build@master') _
 
 buildPlugin ( {
-    repoName = 'aom-backend'
+    repoName = 'blankWebApp2-backend'
     project = ["aistudio"]
     dockerImages = [
         [
             'compileContainer': '',
             'preBuild':[],
-            'imageName': 'apulistech/aom-backend',
+            'imageName': 'apulistech/blankWebApp2-backend',
             'directory': '.',
             'dockerfilePath': '',
             'arch': ['amd64','arm64']

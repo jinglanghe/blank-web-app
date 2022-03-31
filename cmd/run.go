@@ -17,7 +17,7 @@ import (
 // alertCmd represents the alert command
 var alertCmd = &cobra.Command{
 	Use:   "run",
-	Short: "Run aom service",
+	Short: "Run blankWebApp2 service",
 	Run: func(cmd *cobra.Command, args []string) {
 		config.Init()
 		cache.Init()
