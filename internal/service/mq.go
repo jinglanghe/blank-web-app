@@ -3,10 +3,10 @@ package service
 import (
 	"fmt"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
-	"github.com/apulis/sdk/go-utils/broker"
-	_ "github.com/apulis/sdk/go-utils/broker/kafka"
-	"github.com/apulis/sdk/go-utils/broker/rabbitmq"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker"
+	_ "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker/kafka"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/broker/rabbitmq"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 )
 
 var (

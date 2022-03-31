@@ -2,7 +2,7 @@ package dao
 
 import (
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 )
 
 func SysVersionGet() (version model.SysVersion, err error) {

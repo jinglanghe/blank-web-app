@@ -10,7 +10,7 @@ import (
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/metadata"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model/aaa"
 	aaa2 "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service/aaa"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 )
 
 var (

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model/aaa"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"io"
 	"net/http"
 )

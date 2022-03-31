@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"

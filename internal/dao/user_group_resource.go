@@ -6,7 +6,7 @@ import (
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service/aaa"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"gorm.io/gorm"
 )
 

@@ -6,7 +6,7 @@ import (
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/controllers"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cobra"
 	"os"

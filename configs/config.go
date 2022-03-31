@@ -3,7 +3,7 @@ package configs
 import (
 	"encoding/json"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/metadata"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"github.com/spf13/viper"
 )
 

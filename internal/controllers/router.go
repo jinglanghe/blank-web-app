@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
-	"github.com/apulis/go-business/pkg/jwt"
 	"github.com/gin-gonic/gin"
+	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/jwt"
 )
 
 var (
@@ -32,9 +32,6 @@ func RegisterRoutes(e *gin.Engine) {
 	v1.POST("/modelarts-setting", SetModelArts)
 	v1.GET("/modelarts-setting", ModelArtsList)
 
-	rg := v1.Group("/alert")
-
-	registerAlertHistory(rg)
 	registerNode(v1)
 	registerResourceConf(v1)
 	registerOrgResource(v1)

@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

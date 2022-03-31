@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
-	"github.com/apulis/sdk/go-utils/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	alertconfig "github.com/prometheus/alertmanager/config"
 	"github.com/prometheus/prometheus/pkg/rulefmt"
 	"gopkg.in/yaml.v2"
