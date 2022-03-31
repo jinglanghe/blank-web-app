@@ -32,10 +32,4 @@ func RegisterRoutes(e *gin.Engine) {
 	v1.POST("/modelarts-setting", SetModelArts)
 	v1.GET("/modelarts-setting", ModelArtsList)
 
-	registerNode(v1)
-	registerResourceConf(v1)
-	registerOrgResource(v1)
-	registerUserGroupResource(v1)
-	registerResourceQuota(v1)
-	registerPrometheus(v1)
 }

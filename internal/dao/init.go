@@ -81,10 +81,6 @@ func Init() {
 		&model.AlertMetric{},
 	)
 	database = database.Debug()
-
-	CreateDefaultOrgResource()
-	CreateSystemAdminGroupResource()
-	CreateDefaultUserGroupResource()
 }
 
 func GetDB() *gorm.DB {

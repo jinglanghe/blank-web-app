@@ -9,7 +9,6 @@ import (
 
 var (
 	Config   AppConfig
-	Metadata MetadataConf
 )
 
 type LogConfig struct {
@@ -28,17 +27,14 @@ type AppConfig struct {
 	Datasource       string    `mapstructure:"datasource"`
 	LogConfig        LogConfig `mapstructure:"log"`
 	JWTConfig        JWTConfig `mapstructure:"jwt"`
-	IAM              IAMConfig `mapstructure:"iam"`
 	NodeInfoInterval int64     `mapstructure:"node_info_interval"`
 
 	Mysql      DbStruct    `mapstructure:"mysql"`
 	Postgres   DbStruct    `mapstructure:"postgres"`
 	Sqlite     DbStruct    `mapstructure:"sqlite"`
 	Rabbitmq   Rabbitmq    `mapstructure:"rabbitmq"`
-	Prometheus Prometheus  `mapstructure:"prometheus"`
 	Redis      RedisConfig `mapstructure:"redis"`
 
-	MailServer MailServer `mapstructure:"mailServer"`
 }
 
 type Rabbitmq struct {
@@ -47,15 +43,6 @@ type Rabbitmq struct {
 	Host     string `mapstructure:"host"`
 	Port     int    `mapstructure:"port"`
 	Topic    string `mapstructure:"topic"`
-}
-
-type Prometheus struct {
-	ServerUrl string `mapstructure:"serverUrl"`
-}
-
-type IAMConfig struct {
-	Host string `mapstructure:"host"`
-	Port int    `mapstructure:"port"`
 }
 
 type DbStruct struct {
@@ -72,14 +59,6 @@ type RedisConfig struct {
 	Host     string `mapstructure:"host"`
 	Auth     string `mapstructure:"auth"`
 	Database int    `mapstructure:"db"`
-}
-
-type MailServer struct {
-	SmtpHost string `mapstructure:"smtpHost"`
-	SmtpPort int    `mapstructure:"smtpPort"`
-	UserName string `mapstructure:"userName"`
-	Password string `mapstructure:"password"`
-	Status   bool   `mapstructure:"status"`
 }
 
 // Init 配置初始化
@@ -99,14 +78,6 @@ func Init() {
 		logging.Fatal().Err(err).Msg("config: viper decode config failed")
 	}
 
-	alertRuleMeta, err := metadata.Asset("alert-rule.json")
-	if err != nil {
-		logging.Fatal().Err(err).Msg("load alert-rule metadata error")
-	}
-	if err := json.Unmarshal(alertRuleMeta, &Metadata); err != nil {
-		logging.Fatal().Err(err).Msg("Fatal error read metadata file")
-	}
-
 	queryConditionMetaData, err := metadata.Asset("query_condition.json")
 	if err != nil {
 		logging.Fatal().Err(err).Msg("load query-condition metadata error")
@@ -114,12 +85,4 @@ func Init() {
 	if err := json.Unmarshal(queryConditionMetaData, &QueryConditionMetaData); err != nil {
 		logging.Fatal().Err(err).Msg("Fatal error unmarshal queryConditionMetaData")
 	}
-}
-
-func AlertTypes() []ValueTuple {
-	var alertTypes []ValueTuple
-	for key, value := range Metadata.Resource.Source["node"].Types {
-		alertTypes = append(alertTypes, ValueTuple{Value: key, Label: value.Label})
-	}
-	return alertTypes
 }

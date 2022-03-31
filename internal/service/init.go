@@ -1,22 +1,13 @@
 package service
 
 import (
-	"encoding/json"
-	"time"
-
-	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/cache"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/metadata"
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model/aaa"
-	aaa2 "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service/aaa"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 )
 
 var (
-	nodeDao              dao.Nodes
 	nodeDeviceDao        dao.NodeDevices
-	userGroupResourceDao dao.UserGroupResource
 	resourceQuotaDao     dao.ResourceQuota
 )
 
@@ -30,40 +21,7 @@ func Init() {
 		logging.Fatal().Err(err).Msg("init clientSet failed")
 	}
 
-	//go RegisterEndpointsAndPolicies()
-	//go IntervalRefresh()
-
 	initInformer()
-}
-
-func RegisterEndpointsAndPolicies() {
-	endpointBytes, err := metadata.Asset("endpoint.json")
-	if err != nil {
-		logging.Fatal().Err(err).Msg("load endpoint json file error")
-		return
-	}
-
-	var endpoints aaa.EndPointsAndPolicies
-	if err := json.Unmarshal(endpointBytes, &endpoints); err != nil {
-		logging.Fatal().Err(err).Msg("unmarshal endpoint json file error")
-		return
-	}
-
-	if err := aaa2.RegisterEndPoints(&endpoints); err != nil {
-		logging.Error(err).Msg("RegisterEndPoints error")
-	}
-}
-
-func IntervalRefresh() {
-	nodeInfoInterval := config.Config.NodeInfoInterval
-	if nodeInfoInterval == 0 {
-		nodeInfoInterval = 60
-	}
-	logging.Info().Msgf("refresh interval: %v minute", nodeInfoInterval)
-	for {
-		time.Sleep(time.Duration(nodeInfoInterval) * time.Minute)
-		RefreshData()
-	}
 }
 
 func RefreshData() {
@@ -76,9 +34,6 @@ func RefreshData() {
 	}
 	defer mu.Unlock()
 
-	RefreshModelNode()
-	RefreshNodeLabel()
-	RefreshQuota()
 	RefreshModelResourceQuota()
 }
 

@@ -73,7 +73,7 @@ func handler(m map[string]string) error {
 	}
 
 	// 创建ns
-	CreateNamespace(ns)
+	//CreateNamespace(ns)
 
 	return nil
 }
