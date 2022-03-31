@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"github.com/gin-gonic/gin"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"net/http"
 )
 

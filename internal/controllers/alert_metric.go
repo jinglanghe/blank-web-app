@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
 	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
 )
 
 var (

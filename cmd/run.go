@@ -1,14 +1,14 @@
 package cmd
 
 import (
+	"github.com/gin-gonic/gin"
+	"github.com/spf13/cobra"
 	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/cache"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/controllers"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
-	"github.com/gin-gonic/gin"
-	"github.com/spf13/cobra"
 	"os"
 	"os/signal"
 	"syscall"

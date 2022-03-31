@@ -2,9 +2,9 @@ package cache
 
 import (
 	"context"
+	"github.com/go-redis/redis/v8"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
-	"github.com/go-redis/redis/v8"
 	"time"
 )
 

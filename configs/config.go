@@ -2,9 +2,9 @@ package configs
 
 import (
 	"encoding/json"
+	"github.com/spf13/viper"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/metadata"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
-	"github.com/spf13/viper"
 )
 
 var (

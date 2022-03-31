@@ -8,7 +8,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "blankWebApp2",
-	Short: "Apulis apsc management",
+	Short: "blankWebApp2 management",
 	Run: func(cmd *cobra.Command, args []string) {
 	},
 }

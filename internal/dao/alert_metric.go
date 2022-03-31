@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	uuid "github.com/satori/go.uuid"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )

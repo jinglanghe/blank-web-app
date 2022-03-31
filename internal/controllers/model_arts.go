@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"encoding/base64"
+	"github.com/gin-gonic/gin"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dto"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
-	"github.com/gin-gonic/gin"
 )
 
 func SetModelArts(c *gin.Context) {
