@@ -2,13 +2,14 @@ package dao
 
 import (
 	"fmt"
+	"os"
+
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"gitlab.apulis.com.cn/hjl/blank-web-app-2/logging"
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
-	"os"
 )
 
 var database *gorm.DB
@@ -68,7 +69,6 @@ func Init() {
 	database.AutoMigrate(
 		&model.Setting{},
 		&model.SysVersion{},
-		&model.AlertMetric{},
 	)
 	database = database.Debug()
 }
