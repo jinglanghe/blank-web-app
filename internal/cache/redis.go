@@ -2,7 +2,7 @@ package cache
 
 import (
 	"context"
-	"github.com/apulis/bmod/aistudio-aom/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"github.com/apulis/sdk/go-utils/logging"
 	"github.com/go-redis/redis/v8"
 	"time"

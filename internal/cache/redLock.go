@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"github.com/apulis/bmod/aistudio-aom/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"github.com/go-redis/redis/v8"
 	"github.com/go-redsync/redsync/v4"
 	"github.com/go-redsync/redsync/v4/redis/goredis/v8"

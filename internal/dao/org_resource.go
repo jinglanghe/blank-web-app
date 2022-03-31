@@ -1,9 +1,9 @@
 package dao
 
 import (
-	"github.com/apulis/bmod/aistudio-aom/internal/dto"
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
-	"github.com/apulis/bmod/aistudio-aom/internal/service/aaa"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dto"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service/aaa"
 	"github.com/apulis/sdk/go-utils/logging"
 	"gorm.io/gorm"
 )

@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/apulis/bmod/aistudio-aom/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

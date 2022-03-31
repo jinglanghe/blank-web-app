@@ -3,9 +3,9 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/apulis/bmod/aistudio-aom/internal/dao"
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
-	"github.com/apulis/bmod/aistudio-aom/internal/service"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"net/http"

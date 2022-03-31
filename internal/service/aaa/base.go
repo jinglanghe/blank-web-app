@@ -2,7 +2,7 @@ package aaa
 
 import (
 	"fmt"
-	config "github.com/apulis/bmod/aistudio-aom/configs"
+	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 )
 
 func getAaaDomain() string {

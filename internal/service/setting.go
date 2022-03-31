@@ -4,7 +4,7 @@ import (
 	"archive/zip"
 	"bytes"
 	"context"
-	"github.com/apulis/bmod/aistudio-aom/internal/utils"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
 	"github.com/apulis/sdk/go-utils/logging"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

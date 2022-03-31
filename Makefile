@@ -1,4 +1,4 @@
-PKG=github.com/apulis/bmod/aistudio-aom
+PKG=gitlab.apulis.com.cn/hjl/blank-web-app-2
 IMAGE?=apulistech/aom-backend
 GIT_COMMIT?=$(shell git rev-parse --short HEAD)
 GIT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)

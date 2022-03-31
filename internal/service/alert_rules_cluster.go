@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 	"fmt"
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
-	"github.com/apulis/bmod/aistudio-aom/internal/utils"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
 	"github.com/apulis/sdk/go-utils/logging"
 	alertconfig "github.com/prometheus/alertmanager/config"
 	"github.com/prometheus/prometheus/pkg/rulefmt"

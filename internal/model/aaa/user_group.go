@@ -1,6 +1,6 @@
 package aaa
 
-import "github.com/apulis/bmod/aistudio-aom/internal/model"
+import "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 
 const (
 	SystemAdmin UserGroupType = iota + 1 // 系统管理员组

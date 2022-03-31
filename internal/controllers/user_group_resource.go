@@ -2,12 +2,12 @@ package controllers
 
 import (
 	"fmt"
-	"github.com/apulis/bmod/aistudio-aom/internal/dao"
-	"github.com/apulis/bmod/aistudio-aom/internal/dto"
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
-	"github.com/apulis/bmod/aistudio-aom/internal/service"
-	"github.com/apulis/bmod/aistudio-aom/internal/service/aaa"
-	"github.com/apulis/bmod/aistudio-aom/internal/utils"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dto"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service/aaa"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
 	"github.com/gin-gonic/gin"
 )
 

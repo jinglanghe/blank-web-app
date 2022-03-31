@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/apulis/bmod/aistudio-aom/internal/model/aaa"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model/aaa"
 	"github.com/apulis/sdk/go-utils/logging"
 	"net/http"
 )

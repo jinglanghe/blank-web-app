@@ -1,7 +1,7 @@
 package aaa
 
 import (
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"gorm.io/datatypes"
 )
 

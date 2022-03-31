@@ -2,8 +2,8 @@ package dao
 
 import (
 	"fmt"
-	"github.com/apulis/bmod/aistudio-aom/configs"
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"github.com/apulis/sdk/go-utils/logging"
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"

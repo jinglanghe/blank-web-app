@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"github.com/apulis/bmod/aistudio-aom/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"github.com/apulis/sdk/go-utils/broker"
 	_ "github.com/apulis/sdk/go-utils/broker/kafka"
 	"github.com/apulis/sdk/go-utils/broker/rabbitmq"

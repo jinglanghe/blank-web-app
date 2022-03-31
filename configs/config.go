@@ -2,7 +2,7 @@ package configs
 
 import (
 	"encoding/json"
-	"github.com/apulis/bmod/aistudio-aom/internal/metadata"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/metadata"
 	"github.com/apulis/sdk/go-utils/logging"
 	"github.com/spf13/viper"
 )

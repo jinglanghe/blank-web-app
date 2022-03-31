@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"time"
 
-	config "github.com/apulis/bmod/aistudio-aom/configs"
-	"github.com/apulis/bmod/aistudio-aom/internal/cache"
-	"github.com/apulis/bmod/aistudio-aom/internal/dao"
-	"github.com/apulis/bmod/aistudio-aom/internal/metadata"
-	"github.com/apulis/bmod/aistudio-aom/internal/model/aaa"
-	aaa2 "github.com/apulis/bmod/aistudio-aom/internal/service/aaa"
+	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/cache"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/metadata"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model/aaa"
+	aaa2 "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/service/aaa"
 	"github.com/apulis/sdk/go-utils/logging"
 )
 

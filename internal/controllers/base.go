@@ -3,8 +3,8 @@ package controllers
 import (
 	"errors"
 	"fmt"
-	//"github.com/apulis/bmod/aistudio-aom/internal/logging"
-	"github.com/apulis/bmod/aistudio-aom/internal/utils"
+	//"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/logging"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
 	"github.com/apulis/sdk/go-utils/logging"
 	"gorm.io/gorm"
 	"net/http"

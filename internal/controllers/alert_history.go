@@ -1,12 +1,12 @@
 package controllers
 
 import (
-	"github.com/apulis/bmod/aistudio-aom/internal/dao"
-	_ "github.com/apulis/bmod/aistudio-aom/internal/dao"
-	"github.com/apulis/bmod/aistudio-aom/internal/dto"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
+	_ "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dao"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dto"
 	"github.com/apulis/go-business/pkg/jwt"
 
-	//"github.com/apulis/bmod/aistudio-aom/internal/session"
+	//"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/session"
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/apulis/bmod/aistudio-aom/cmd"
+import "gitlab.apulis.com.cn/hjl/blank-web-app-2/cmd"
 
 func main() {
 	cmd.Execute()

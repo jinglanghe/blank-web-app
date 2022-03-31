@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
-	"github.com/apulis/bmod/aistudio-aom/internal/utils"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	resourcehelper "k8s.io/kubectl/pkg/util/resource"

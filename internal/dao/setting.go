@@ -2,9 +2,9 @@ package dao
 
 import (
 	"encoding/base64"
-	"github.com/apulis/bmod/aistudio-aom/internal/dto"
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
-	"github.com/apulis/bmod/aistudio-aom/internal/utils"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dto"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/utils"
 )
 
 type Setting struct{}

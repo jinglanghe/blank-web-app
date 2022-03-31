@@ -1,6 +1,6 @@
 package aaa
 
-import "github.com/apulis/bmod/aistudio-aom/internal/model"
+import "gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 
 type Organization struct {
 	model.Base

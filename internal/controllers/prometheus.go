@@ -5,7 +5,7 @@ import (
 	"compress/gzip"
 	"encoding/json"
 	"fmt"
-	config "github.com/apulis/bmod/aistudio-aom/configs"
+	config "gitlab.apulis.com.cn/hjl/blank-web-app-2/configs"
 	"github.com/apulis/sdk/go-utils/logging"
 	"github.com/gin-gonic/gin"
 	"io"

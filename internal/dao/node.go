@@ -2,8 +2,8 @@ package dao
 
 import (
 	"database/sql"
-	"github.com/apulis/bmod/aistudio-aom/internal/dto"
-	"github.com/apulis/bmod/aistudio-aom/internal/model"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/dto"
+	"gitlab.apulis.com.cn/hjl/blank-web-app-2/internal/model"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )
