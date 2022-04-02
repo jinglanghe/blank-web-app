@@ -1,6 +1,8 @@
 package service
 
-import "os"
+import (
+	"os"
+)
 
 func FileExist(path string) bool {
 	_, err := os.Lstat(path)

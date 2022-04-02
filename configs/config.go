@@ -28,6 +28,7 @@ type AppConfig struct {
 	Datasource       string    `mapstructure:"datasource"`
 	LogConfig        LogConfig `mapstructure:"log"`
 	JWTConfig        JWTConfig `mapstructure:"jwt"`
+	APIPrefix        string    `mapstructure:"api_prefix"`
 	NodeInfoInterval int64     `mapstructure:"node_info_interval"`
 
 	Mysql    DbStruct    `mapstructure:"mysql"`

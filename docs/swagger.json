@@ -1,0 +1,59 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/system-setting/system-version": {
+            "get": {
+                "description": "获取系统版本",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "系统设置"
+                ],
+                "summary": "获取系统版本8888",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/model.SysVersion"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "model.SysVersion": {
+            "type": "object",
+            "properties": {
+                "createdAt": {
+                    "type": "integer"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "installTime": {
+                    "type": "integer"
+                },
+                "installer": {
+                    "type": "string"
+                },
+                "sysVersion": {
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

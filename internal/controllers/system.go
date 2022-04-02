@@ -9,18 +9,28 @@ import (
 	"gitlab.apulis.com.cn/hjl/blank-web-app/internal/model"
 )
 
-func registerMetric(rg *gin.RouterGroup) {
-	ctrl := &metricController{}
+func registerSystemSetting(rg *gin.RouterGroup) {
+	ctrl := &systemSettingController{}
 
-	g := rg.Group("/metrics")
+	g := rg.Group("/system-setting")
 	g.GET("/system-version", ctrl.GetSysVersion)
 }
 
-type metricController struct {
+type systemSettingController struct {
 	BaseController
 }
 
-func (m *metricController) GetSysVersion(c *gin.Context) {
+// GetSysVersion
+// @BasePath /api/v1
+// @Summary 获取系统版本8888
+// @Schemes
+// @Description 获取系统版本
+// @Tags 系统设置
+// @Accept json
+// @Produce json
+// @Success 200 {object} model.SysVersion
+// @Router /system-setting/system-version [get]
+func (m *systemSettingController) GetSysVersion(c *gin.Context) {
 	sysVersion := model.SysVersion{}
 
 	// 从数据库

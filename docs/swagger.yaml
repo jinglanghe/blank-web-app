@@ -1,0 +1,37 @@
+definitions:
+  model.SysVersion:
+    properties:
+      createdAt:
+        type: integer
+      description:
+        type: string
+      id:
+        type: integer
+      installTime:
+        type: integer
+      installer:
+        type: string
+      sysVersion:
+        type: string
+      updatedAt:
+        type: integer
+    type: object
+info:
+  contact: {}
+paths:
+  /system-setting/system-version:
+    get:
+      consumes:
+      - application/json
+      description: 获取系统版本
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.SysVersion'
+      summary: 获取系统版本8888
+      tags:
+      - 系统设置
+swagger: "2.0"
